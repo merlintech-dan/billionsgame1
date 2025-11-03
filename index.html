@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Billions Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Billions vs Bot</h1>
+    <input id="playerName" type="text" placeholder="Enter your name" />
+    <button id="startBtn">Start Game</button>
+
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <div id="hud">
+      <p>Score: <span id="score">0</span></p>
+      <p>Level: <span id="level">1</span></p>
+    </div>
+
+    <div id="controls">
+      <button data-dir="up">⬆️</button>
+      <div>
+        <button data-dir="left">⬅️</button>
+        <button data-dir="down">⬇️</button>
+        <button data-dir="right">➡️</button>
+      </div>
+    </div>
+
+    <h2>Leaderboard</h2>
+    <ul id="leaderboardList"></ul>
+
+    <audio id="eatSound" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg"></audio>
+    <audio id="dieSound" src="https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
